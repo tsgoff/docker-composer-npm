@@ -1,4 +1,4 @@
-FROM composer
+FROM composer:1.6
 
 RUN apk add rsync npm libpng-dev icu-dev g++ libxml2-dev libxslt-dev file autoconf nasm libtool automake && \
     docker-php-ext-install gd bcmath intl soap xsl pdo_mysql && \
